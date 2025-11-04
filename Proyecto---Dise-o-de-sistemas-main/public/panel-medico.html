@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Panel Médico</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" href="/favicon.ico" />
+  <style>
+    .copied {
+      color: #28a745;
+      font-size: 14px;
+      display: none;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 1rem;
+    }
+    th, td {
+      border: 1px solid #ccc;
+      padding: 0.5rem;
+      text-align: left;
+    }
+    th {
+      background: #f0f0f0;
+    }
+  </style>
+</head>
+<body data-page="panel-medico">
+  <div class="container">
+    <div class="profile">
+      <img src="doctor-avatar.png" alt="avatar" />
+      <p id="pacienteCount">Cargando pacientes...</p>
+    </div>
+
+    <h2>Invitar paciente</h2>
+    <button id="btnGen" class="btn-primary">Generar código</button>
+
+    <div class="code-box">
+      <p id="codigo">---</p>
+      <button id="btnCopiar" class="btn-link">Copiar</button>
+      <span id="copiado" class="copied">✓ Copiado!</span>
+    </div>
+
+    <h3>Historial de códigos</h3>
+    <table id="invitesTable">
+      <thead>
+        <tr>
+          <th>Código</th>
+          <th>Fecha</th>
+          <th>Estado</th>
+          <th>Paciente</th>
+          <th>Email</th>
+        </tr>
+      </thead>
+      <tbody id="historial-body">
+        <!-- Aquí initPanelMedico() insertará una fila por invitación -->
+      </tbody>
+    </table>
+  </div>
+
+  <script src="/js/app.js"></script>
+</body>
+</html>

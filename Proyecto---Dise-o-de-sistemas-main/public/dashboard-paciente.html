@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sonder - Panel del Paciente</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="top-bar">
+        <h1>Sonder</h1>
+        <span class="fecha">22 de mayo</span>
+      </div>
+      <button class="bluetooth-btn">
+        <img src="bluetooth-icon.svg" alt="Bluetooth"> Conectar mi reloj
+      </button>
+    </header>
+
+    <section class="datos-salud">
+      <h2>Datos de salud</h2>
+      <div class="grid-salud">
+        <div class="card"> <p>Pasos</p><h3>5,234</h3> </div>
+        <div class="card"> <p>Calorías</p><h3>250</h3> </div>
+        <div class="card"> <p>Ritmo cardíaco</p><h3>72 bpm</h3> </div>
+        <div class="card"> <p>Horas de sueño</p><h3>7h 30m</h3> </div>
+        <div class="card"> <p>Estrés</p><h3>25</h3> </div>
+      </div>
+    </section>
+
+    <section class="medicacion">
+      <h2>Mi medicación</h2>
+      <div class="med-lista">
+        <div class="med">
+          <p>Medicamento A</p>
+          <span>100mg - 8:00 AM</span>
+          <input type="checkbox">
+        </div>
+        <div class="med">
+          <p>Medicamento B</p>
+          <span>50mg - 12:00 PM</span>
+          <input type="checkbox">
+        </div>
+      </div>
+      <button class="btn-secundario">Agregar medicamento</button>
+    </section>
+
+    <section class="estudios">
+      <h2>Mis estudios</h2>
+      <div class="estudio">
+        <p>Estudio 1</p><button class="btn-ver">Ver</button>
+      </div>
+      <div class="estudio">
+        <p>Estudio 2</p><button class="btn-ver">Ver</button>
+      </div>
+      <button class="btn-secundario">Agregar estudio</button>
+    </section>
+
+    <section class="ia-chat">
+      <button class="btn-ia"> Preguntarle a mi IA</button>
+    </section>
+  </div>
+
+  <footer class="nav-bar">
+    <a href="#" class="active">🏠 Inicio</a>
+    <a href="#">Perfil</a>
+    <a href="#">Citas</a>
+    <a href="#">Mensajes</a>
+  </footer>
+</body>
+</html>

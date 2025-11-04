@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Crear cuenta</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" href="/favicon.ico" />
+</head>
+<body data-page="crear-cuenta">
+  <div class="container">
+    <h1>Crear cuenta</h1>
+    <form id="frmCrear">
+      <!-- NUEVO: Nombre completo -->
+      <input type="text"   name="nombre" placeholder="Nombre completo" required/>
+
+      <input type="email"  name="email"  placeholder="E-mail"           required/>
+      <input type="password" name="pass"  placeholder="Contraseña"     required/>
+      <input type="password" name="repass" placeholder="Repetir contraseña" required/>
+
+      <label>
+        <input type="checkbox" required/>
+        Acepto la política de privacidad
+      </label>
+
+      <div class="code-validate-group">
+        <input id="code" type="text" name="code"
+               placeholder="Código del médico" required/>
+        <button id="btnValidate" type="button">Validar código</button>
+      </div>
+
+      <!-- Empieza deshabilitado hasta validar el código -->
+      <button id="btnSubmit" class="btn-primary" type="submit" disabled>
+        Crear cuenta
+      </button>
+    </form>
+
+    <p class="bottom-link">
+      ¿Ya tenés cuenta? 
+      <a href="iniciar-sesion-paciente.html">Iniciar sesión</a>
+    </p>
+  </div>
+
+  <!-- Carga tu JS general que contiene initCrearCuenta() -->
+  <script src="/js/app.js"></script>
+</body>
+</html>

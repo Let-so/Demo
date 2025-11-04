@@ -1,0 +1,9 @@
+# credenciales locales
+.env
+public/Backend/servers/.env
+
+# la carpeta de Vercel
+.vercel/
+
+# dependencias
+node_modules/
